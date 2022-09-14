@@ -26,7 +26,7 @@ const ListRender = (props) => {
 
     const classes = useStyles();
     return (
-        <div id="test" className={classes.container}>
+        <div id="scrollableDiv" className={classes.container}>
             <TextField
                 id="standard-basic"
                 variant="standard"
@@ -46,7 +46,7 @@ const ListRender = (props) => {
                     loader={
                         <LinearProgress color="inherit" />
                     }
-                    scrollableTarget="test"
+                    scrollableTarget="scrollableDiv"
                     endMessage={
                         <p className={classes.paragraph}>
                             <b>Yay! You have seen it all</b>
